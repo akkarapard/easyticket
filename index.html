@@ -20,12 +20,14 @@
   </head>
   <body>
     <div id="map"> </div>
+    var aa = position.coords.latitude;
+    var bb = position.coords.longtitude;
     <script>
       var map;
 	  var mylat = position.coords.latitude;
 	  var mylong = position.coords.longtitude;
-	  var coords = new google.map.LatLng(mylat,mylong);
-	  var position = {mylat , mylong}
+	  var coords = new google.map.LatLng(aa,bb);
+	  var position = {aa,bb}
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: position,
