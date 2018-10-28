@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -21,7 +21,8 @@
     </style>
 </head>
 
-<body bgcolor="#33CCFF">	<fieldset style="width:auto ; height:auto ; 
+<body bgcolor="#33CCFF">
+	<fieldset style="width:auto ; height:auto ; 
 margin-top:20px ; background:#C3F"><legend>ค้นหารถทัวร์</legend>
 	<div align="center">
   เลขตั๋ว 
@@ -31,16 +32,27 @@ margin-top:20px ; background:#C3F"><legend>ค้นหารถทัวร์<
     <div align="right" style="margin-top:-30px"><a href="test.html">Home</a></div>
 
 </fieldset>
-    <div>
-    <fieldset style="width:640px ; height:480px">
+    <div></div>
+	<script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 13.7563, lng: 100.5018},
+          zoom: 20
+        });
+		
+		</script>
+        
    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=initMap">
-    </script>
-    </fieldset>
-     
-    </div>
+</script>
     
-	</fieldset>
     
+
+    	
 </body>
 </html>
