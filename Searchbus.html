@@ -6,19 +6,7 @@
 <title>SearchBus</title>
 <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-      <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%; 
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+
 </head>
 
 <body bgcolor="#33CCFF">
@@ -32,7 +20,7 @@ margin-top:20px ; background:#C3F"><legend>ค้นหารถทัวร์<
     <div align="right" style="margin-top:-30px"><a href="test.html">Home</a></div>
 
 </fieldset>
-    <div></div>
+    <div id = "map"></div>
 	<script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
@@ -47,10 +35,15 @@ margin-top:20px ; background:#C3F"><legend>ค้นหารถทัวร์<
 		
 		</script>
         
-   <script async defer
+
+    
+    <fieldset style="width:640px ; height:480px">
+       <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=initMap">
 </script>
     
+    </fieldset>
+     
     
 
     	
