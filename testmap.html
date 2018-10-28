@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!Doctype html>
 <html lang = "en">
 <head>
@@ -37,4 +38,45 @@
 	</div>
 </body>
 
+=======
+<!Doctype html>
+<html lang = "en">
+<head>
+
+	<meta charset ="UTF-8">
+	<title>EasyBusTicket</title>
+</head>
+
+	<script src = "js/jquery.js"></script>	
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script>
+		x = navigator.geolocation;
+		x.getCurrentPosition(success, failure);
+
+		function success(position){
+			var my lat = position.coords.latitude;
+			var my long = position.coords.longtitude;
+			$('#lat').html(mylat);
+			$('#long').html(mylong);
+		}	
+
+		function failure(){
+			$('#lat').html("<p>It didn't work, co-ordinates not available!</p>");
+		}
+	</script>
+<body>
+
+	<div id ="map">
+		
+	</div>
+
+
+	<div id ="lat">
+	</div>
+	<div id = "long">
+		
+	</div>
+</body>
+
+>>>>>>> 7c529a306fbaa71cd41eba71d6de1892f2fb2de6
 </html>
