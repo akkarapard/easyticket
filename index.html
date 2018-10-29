@@ -23,7 +23,7 @@
       var map;
       function getMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {pos},
+          center: {lat: 13.7563, lng: 100.5018},
           zoom: 15
         });
       }
@@ -31,6 +31,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=getMap"
     async defer></script>
 
-    <p >pos</p>
+    <p>(mylat,mylong)</p>
   </body>
 </html>
