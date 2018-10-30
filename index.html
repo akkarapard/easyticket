@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <p id ="mypos"></p>
+    <p id ="demo"></p>
     <div id="map"></div> 
 
     <script>
@@ -27,15 +27,20 @@
         });
       }    
       </script> 
-      <script>
-      function position(){
-          pos = {
-            position.coords.latitude
-            position.coords.longtitude
-          } 
-          document.getElementById("mypos").innerHTML = position(pos);
-        }
-      </script>
+  <script>
+  var x = document.getElementById("demo");
+  function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+  }
+  </script>
 
  
 
