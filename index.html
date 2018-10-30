@@ -34,7 +34,11 @@
           center: {lat: 13.723418599999999, lng: 100.4762319},
           zoom: 15
         });
-
+        var marker = new google.maps.Marker({
+    position : {lat: 13.723418599999999, lng: 100.4762319},
+    map:map,
+    title:"My Home"
+  });
       }    
       </script> 
   <script>
@@ -50,14 +54,7 @@
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude; 
   }
-  function Mymarker(){
-  var marker = new google.maps.Marker({
-    position : {lat: 13.723418599999999, lng: 100.4762319},
-    map:map,
-    title:"My Home"
-  });
-marker.setmap(Mymarker)
-}
+
   </script>
 
  
