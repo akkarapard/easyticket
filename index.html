@@ -18,7 +18,7 @@
     <script>
      
       var map;
-      function getMyMap() {
+      function minimap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.7563, lng: 100.5018},
           zoom: 15
@@ -27,9 +27,9 @@
         })
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=getMyMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=minimap"
     async defer></script>
 
-  
+
   </body>
 </html>
