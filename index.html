@@ -27,7 +27,10 @@
       </script> 
       <script>
       function position(){
-          pos = new position.coords.latitude
+          pos = {
+            position.coords.latitude,
+            position.coords.longtitude
+          } 
           document.write(pos);
         }
       </script>
