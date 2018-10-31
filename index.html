@@ -27,11 +27,12 @@
     <div id="map"></div> 
 
     <script>
-     
+      var mylat = new position.coords.latitude;
+      var mylong = new position.coords.longitude;
       var map;
       function Uninit() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 13.677622, lng: 100.561363},
+          center: {lat: mylat, lng: mylong},
           zoom: 15
         });
         var trafficLayer = new google.maps.TrafficLayer();
