@@ -34,12 +34,14 @@
           center: {lat: 13.677622, lng: 100.561363},
           zoom: 15
         });
+        var trafficLayer = new google.maps.TrafficLayer();
         var marker = new google.maps.Marker({
     position : {lat: 13.677622, lng: 100.561363},
     map:map,
     draggable : true,
     animation : google.maps.Animation.DROP,
-    title:"My Home"
+    title:"My Home";
+    trafficLayer.setMap(map);
   });
     
       }    
