@@ -31,8 +31,7 @@
 
       var map;
       function Uninit() {
-         var laandlong = {position.coords.latitude, 
-          position.coords.longitude};
+         var laandlong = position;
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.45222, lng: 100.4762319},
           zoom: 10
