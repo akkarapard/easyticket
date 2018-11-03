@@ -31,7 +31,6 @@
 
       var map;
       function Uninit() {
-         var laandlong = showPosition(position);
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.45222, lng: 100.4762319},
           zoom: 10
@@ -59,15 +58,11 @@
     }
   }
   function showPosition(position) {
-   
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
+    var myposition = position.coords.latitude + position.coords.longitude;
+    x.innerHTML = myposition; 
   }
 
   </script>
-
- 
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEEGBI39prupLdDaemhzrFQiwrKHlzOe4&callback=Uninit"
     async defer></script>
 
