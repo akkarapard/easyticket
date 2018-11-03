@@ -8,7 +8,7 @@
         "signalToNoiseRatio": 0
     }
   ]
-=======
+
 {
   "considerIp": "false",
   "wifiAccessPoints": [
@@ -18,5 +18,4 @@
         "signalToNoiseRatio": 0
     }
   ]
->>>>>>> 06f9d4e591e9404689075ab618ab3f0155c79a1d
 }
