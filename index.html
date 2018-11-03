@@ -33,13 +33,13 @@
       function Uninit() {
          
         map = new google.maps.Map(document.getElementById('map'), {
-          center: location,
+          center: {lat: 13.723418599999999, lng:100.4762319},
           zoom: 15
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
         var marker = new google.maps.Marker({
-          position : location,
+          position : {lat: 13.723418599999999, lng:100.4762319},
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
