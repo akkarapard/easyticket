@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "considerIp": "false",
   "wifiAccessPoints": [
@@ -7,4 +8,15 @@
         "signalToNoiseRatio": 0
     }
   ]
+=======
+{
+  "considerIp": "false",
+  "wifiAccessPoints": [
+    {
+        "macAddress": "38:71:DE:07:FB:EC",
+        "signalStrength": -43,
+        "signalToNoiseRatio": 0
+    }
+  ]
+>>>>>>> 06f9d4e591e9404689075ab618ab3f0155c79a1d
 }
