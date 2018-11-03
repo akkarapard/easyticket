@@ -27,10 +27,10 @@
     <div id="map"></div> 
 
     <script>
-      var mylat =  coords.latitude
-      var mylong =  coords.longitude
+
       var map;
       function Uninit() {
+         var location = new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.677622, lng: 100.561363},
           zoom: 15
@@ -38,11 +38,11 @@
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
         var marker = new google.maps.Marker({
-    position : {lat: mylat, lng: mylong},
-    map:map,
-    draggable : true,
-    animation : google.maps.Animation.DROP,
-    title:"My Home"
+          position : mylat, mylong,
+          map:map,
+          draggable : true,
+          animation : google.maps.Animation.DROP,
+          title:"My Home"
     
   });
     
@@ -58,6 +58,7 @@
     }
   }
   function showPosition(position) {
+   
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude; 
   }
