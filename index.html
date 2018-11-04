@@ -29,7 +29,7 @@
     <script>
 
       var map;
-      var latlong;
+
       function Unit() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.677709959460122 ,lng: 100.56146638477273},
@@ -59,7 +59,7 @@
   }
   function showPosition(position) {
     var myposition = position.coords.latitude + position.coords.longitude;
-    document.getElementById("latlong")
+    var latlon = document.getElementById("latlong")
     x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
