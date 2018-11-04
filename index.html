@@ -29,6 +29,7 @@
     <script>
 
       var map;
+
       function Unit() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 13.677709959460122 ,lng: 100.56146638477273},
@@ -37,7 +38,7 @@
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
         var marker = new google.maps.Marker({
-          position : {lat: 13.677709959460122 ,lng: 100.56146638477273},
+          position : {latlong},
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
@@ -57,7 +58,7 @@
   }
   function showPosition(position) {
     var myposition = position.coords.latitude + position.coords.longitude;
-   
+    var latlon = document.getElementById("latlong")
     x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
