@@ -31,13 +31,13 @@
       var map;
       function Unit() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: myposition,
+          center: meposition,
           zoom: 13
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
         var marker = new google.maps.Marker({
-          position : myposition,
+          position : meposition,
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
@@ -58,7 +58,7 @@
   }
   function showPosition(position) {
     var myposition = position.coords.latitude + position.coords.longitude;
-    meposition = new google.maps.Map(document.getLocation('meposition'));
+    document.getCurrentPosition(meposition)
     x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
