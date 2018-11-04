@@ -27,7 +27,7 @@
     <div id="map"></div> 
     
     <script>
-      var myposition
+      var meposition
       var map;
       function Unit() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -58,7 +58,7 @@
   }
   function showPosition(position) {
     var myposition = position.coords.latitude + position.coords.longitude;
-    myposition = new google.maps.Map(document.getLocation('myposition'));
+    meposition = new google.maps.Map(document.getLocation('meposition'));
     x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
