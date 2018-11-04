@@ -58,9 +58,9 @@
     }
   }
   function showPosition(position) {
-    var lati = position.coords.latitude;
-    var long = position.coords.longitude;
-    var latlon = new google.maps.LatLng(lati,long)
+    var myposition = position.coords.latitude + position.coords.longitude;
+    
+    x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
   </script>
