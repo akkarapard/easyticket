@@ -58,7 +58,7 @@
   }
   function showPosition(position) {
     var myposition = position.coords.latitude + position.coords.longitude;
-    myposition = new google.maps.Map(document.getElementById('myposition'));
+    myposition = new google.maps.Map(document.getLocation('myposition'));
     x.innerHTML = position.coords.latitude + "<br>" + position.coords.longitude; 
   }
 
