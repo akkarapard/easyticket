@@ -39,7 +39,7 @@
         trafficLayer.setMap(map);
         var poss = position.coords.latitude + position.coords.longitude;
         var marker = new google.maps.Marker({
-          position : poss,
+          position : new google.maps.getCurrentPosition('position'),
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
