@@ -39,13 +39,13 @@
         trafficLayer.setMap(map);
       
         var marker = new google.maps.Marker({
-          position : showmyposition(),
+          position : show('myposition'),
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
           title:"My Home"
     
-  }); 
+  });  
 }        
   var x = document.getElementById("demo");
   function getLocation() {
