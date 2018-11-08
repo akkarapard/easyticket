@@ -37,10 +37,10 @@
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
-
+        var position = position.coords.latitude,position.coords.longitude;
         var marker = new google.maps.Marker({
 
-          position : absolute,
+          position : position,
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
