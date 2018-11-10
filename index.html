@@ -40,7 +40,7 @@
         var mylat = position.coords.latitude;
         var mylong = position.coords.longitude;
         var marker = new google.maps.Marker({
-          x.innerHTML = mylat + mylong;
+
           position : {mylat,mylong},
           map:map,
           draggable : true,
@@ -58,7 +58,10 @@
     }
   }
   function showPosition(position) {
-   
+    var mylat = position.coords.latitude;
+    var mylong = position.coords.longitude; 
+    x.innerHTML = mylat + "<br>" + mylong; 
+    return myposition;
   }
 
   </script>
