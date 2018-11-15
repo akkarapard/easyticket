@@ -1,0 +1,196 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="projectres.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1"> <img src="../หัว.jpg">
+    <div id="LayoutDiv2"><style>
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #898984;
+    color: white;
+    padding: 15px 147.4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 140.4px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #E5740E;
+}
+</style>
+
+<div class="dropdown">
+  <button class="dropbtn">เมนู</button>
+  <div class="dropdown-content">
+    <a href="#">พิมพ์ตั๋ว</a>
+    <a href="#">จองตั๋ว</a>
+    <a href="#">เกี่ยวกับ</a>
+  </div>
+</div>
+    </td>
+    <td width="2" height="50" valign="top"></td>
+  </tr>
+  </div>
+<div id="LayoutDiv3">
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+        </style>
+<form name="form1" method="post" action="">
+  <p>
+    <label>
+      <input type="radio" name="เดินทาง" value="radio" id="เดินทาง_0"><font size="4">
+      ไป-กลับ</font></label>
+    <br>
+    <label>
+      <input type="radio" name="เดินทาง" value="radio" id="เดินทาง_1"><font size="4">
+      เที่ยวเดียว</font></label>
+    <br>
+  </p>
+</form>
+  <div>
+    <p>
+          <label for="country">จังหวัดต้นทาง</label>
+          <select id="country" name="country">
+            <option value="กรุณาเลือก">กรุงเทพ</option>
+            <option value="กรุณาเลือก">ชลบุรี</option>
+            <option value="กรุณาเลือก">ปธุมธานี</option>
+          </select>
+          
+          <label for="country">จุดขึ้นรถ</label>
+          <select id="country" name="country">
+            <option value="กรุณาเลือก">กรุงเทพ</option>
+            <option value="กรุณาเลือก">ชลบุรี</option>
+            <option value="กรุณาเลือก">ปธุมธานี</option>
+          </select>
+          
+          <label for="country">จังหวัดปลายทาง</label>
+          <select id="country" name="country">
+            <option value="กรุณาเลือก">กรุงเทพ</option>
+            <option value="กรุณาเลือก">ชลบุรี</option>
+            <option value="กรุณาเลือก">ปธุมธานี</option>
+          </select>
+          
+          <label for="country">จุดลงรถ</label>
+          <select id="country" name="country">
+            <option value="กรุณาเลือก">กรุงเทพ</option>
+            <option value="กรุณาเลือก">ชลบุรี</option>
+            <option value="กรุณาเลือก">ปธุมธานี</option>
+          </select>
+
+    </p>
+		  วันเดินทางไป
+		  <input type="text" id="Datepicker1">
+วันเดินทางกลับ
+<input type="text" id="Datepicker2">
+<p>
+          <input type="Submit" value="ค้นหาเที่ยวรถ">
+    </p>
+  </form>
+  </div>
+</div>
+<div id="LayoutDiv1"><center><font size="6">เส้นทางแนะนำ</font>
+  <div id="LayoutDiv6"> &nbsp;</div>
+</center></div>
+<div id="LayoutDiv4"><center><img src="../Phuket2_re.jpg" width="281"> &nbsp;<img src="../wat-phra-that-doi-suthep-chiang-mai.jpg" width="278"></center>
+  <div id="LayoutDiv7"> &nbsp;</div>
+</div>
+<div id="LayoutDiv5"><center>
+  <font size="3"><a href="file:///C:/Users/sunie/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/dream/Untitled-11.html">หน้าแรก</a> | <a href="https://www.busticket.in.th/bookandpay.php">วิธีจองและชำระเงิน</a> | <a href="https://www.busticket.in.th/countercheckin.php">จุดรับตั๋ว</a> | <a href="https://www.busticket.in.th/busticket_tnc.php">เงื่อนไขและข้อกำหนด</a></font>
+</center></div>
+<script type="text/javascript">
+$(function() {
+	$( "#Datepicker1" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepicker2" ).datepicker(); 
+});
+</script>
+</body>
+</html>
