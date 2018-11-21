@@ -21,14 +21,14 @@
     
   </head>
   <body>
-
+    $(document).ready(function(){
+    testpos = position.coords.latitude ; 
+    })
     <button onclick ="getLocation()">Try It</button>
 
     <p id="demo"></p>
     <div id="map"></div> 
-    $(document).ready(function(){
-    testpos = position.coords.latitude ; 
-  })
+    
     <script>
 
       var map;
