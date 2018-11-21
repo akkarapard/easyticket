@@ -57,7 +57,8 @@
     }
   }
   function showPosition(position) {
-    
+    var mylat = position.coords.latitude;
+    var mylong = position.coords.longitude;
     x.innerHTML = mylat + "<br>" + mylong; 
     return myposition;
   }
