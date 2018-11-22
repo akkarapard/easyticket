@@ -39,7 +39,7 @@
         trafficLayer.setMap(map);
        var mylat = position.coords.latitude; 
        var mylong = position.coords.longitude;
-        var marker = new google.maps.Marker({
+        /*var marker = new google.maps.Marker({
 
           position : {lat:(mylat), lng: (mylong)},
           map:map,
@@ -47,7 +47,7 @@
           animation : google.maps.Animation.DROP,
           title:"My Home"
     
-  });  
+  });  */
 }        
   var x = document.getElementById("demo");
   function getLocation() {
@@ -61,7 +61,15 @@
     var mylat = position.coords.latitude;
     var mylong = position.coords.longitude;
     x.innerHTML = mylat + "<br>" + mylong + "<br>" + testpos; 
-    return myposition;
+     var marker = new google.maps.Marker({
+
+          position : {lat:mylat, lng: mylong},
+          map:map,
+          draggable : true,
+          animation : google.maps.Animation.DROP,
+          title:"My Home"
+    
+  });  
   }
 
   </script>
