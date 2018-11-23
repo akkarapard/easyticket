@@ -32,22 +32,20 @@
 
       function Unit() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 13.677709959460122 ,lng: 100.56146638477273},
+          center: {lat:14.0395457, lng:100.61023089999999},
           zoom: 13
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
-       /*var mylat = position.coords.latitude; 
-       var mylong = position.coords.longitude;*/
-        /*var marker = new google.maps.Marker({
+       var marker = new google.maps.Marker({
 
-          position : {lat:(mylat), lng: (mylong)},
+          position : {lat:14.0395457, lng:100.61023089999999},
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
           title:"My Home"
     
-  });  */
+  });
 }        
   var x = document.getElementById("demo");
   function getLocation() {
@@ -61,15 +59,7 @@
     var mylat = position.coords.latitude;
     var mylong = position.coords.longitude;
     x.innerHTML = mylat + "<br>" + mylong ; 
-     var marker = new google.maps.Marker({
-
-          position : {lat:14.0395457, lng:100.61023089999999},
-          map:map,
-          draggable : true,
-          animation : google.maps.Animation.DROP,
-          title:"My Home"
-    
-  });  
+       
   }
 
   </script>
