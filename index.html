@@ -34,7 +34,7 @@
         var a= position.coords.latitude;
         var b = position.coords.longitude;
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: a.value, lng: b.value},
+          center: {lat: a, lng: b},
           zoom: 13
         });
         var trafficLayer = new google.maps.TrafficLayer();
