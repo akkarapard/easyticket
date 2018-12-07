@@ -37,6 +37,8 @@
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
+        var a= position.coords.latitude;
+        var b = position.coords.longitude;
        var marker = new google.maps.Marker({
           position : {lat:mylat.value, lng:mylong.value},
           map:map,
