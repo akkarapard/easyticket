@@ -37,13 +37,13 @@
         });
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
-       var marker = new google.maps.Marker({
+       /*var marker = new google.maps.Marker({
 
           position : {lat:14.0395457, lng:100.61023089999999},
           map:map,
           draggable : true,
           animation : google.maps.Animation.DROP,
-          title:"My Home"
+          title:"My Home"*/
     
   });
 }        
@@ -59,11 +59,21 @@
     var mylat = position.coords.latitude;
     var mylong = position.coords.longitude;
     x.innerHTML = mylat + "<br>" + mylong ; 
+     var marker = new google.maps.Marker({
+
+          position : {lat:14.0395457, lng:100.61023089999999},
+          map:map,
+          draggable : true,
+          animation : google.maps.Animation.DROP,
+          title:"My Home"
        
   }
 
   </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIjrmh7fO66bQEINojJP453rV-tNvuX0k&https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCKCWV26ipdqvrbzXKcrg42WvuyOE1hEYM&callback=Unit"
+    <script src="https://maps.googleapis.com/maps/api/
+    js?key=AIzaSyCIjrmh7fO66bQEINojJP453rV-tNvuX0k&
+    https://www.googleapis.com/geolocation/v1/geolocate?
+     key=AIzaSyCKCWV26ipdqvrbzXKcrg42WvuyOE1hEYM&callback=Unit"
         async defer>
           
     </script>
